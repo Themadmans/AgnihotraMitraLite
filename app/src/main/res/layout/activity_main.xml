@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/agnihotra"
+    android:orientation="vertical"
+    tools:elevation="2dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_weight="1.2"
+        android:gravity="center_horizontal|center"
+        android:orientation="vertical"
+        android:weightSum="0.5">
+
+
+        <TextView
+            android:id="@+id/textViewdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="36sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:foregroundGravity="center_vertical|fill_horizontal|center"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+
+            android:background="#8FFF"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_weight="1"
+                    android:foregroundGravity="bottom"
+                    app:srcCompat="@drawable/sunrise" />
+
+                <TextView
+                    android:id="@+id/textViewSunrise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center"
+                    android:text="TextView"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:elevation="3dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_weight="1"
+                    android:foregroundGravity="bottom"
+                    app:srcCompat="@drawable/sunset" />
+
+                <TextView
+                    android:id="@+id/textViewSunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/updatelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9FFF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textvp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="Database Expiring Soon, Please Update" />
+
+            <ImageView
+                android:id="@+id/imageViewUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/updateapp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:elevation="3dp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/locationimg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center_horizontal"
+                android:text="TextView"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
